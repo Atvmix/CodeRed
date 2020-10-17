@@ -1,9 +1,3 @@
- local plrcheck = game.Players.LocalPlayer
-    if plrcheck.Name == 'username' or plrcheck.Name == 'username2 and so on' then
-     if plrcheck.Name == plrcheck.Name then else
-         plrcheck:Kick('not whitelisted')
-         end
-
 
 --Generated with Syntax's Converter, comet hub in the works! pastebin search coming soooon REEEEEEE.
 --Counted 21 (objects this time!!!)
@@ -15,6 +9,8 @@ end
 return inst
 end
 	
+wait(0) local A_1 = "[CodeRed] Script Loaded." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
+
 local ScreenGui = CreateInstance('ScreenGui',{DisplayOrder=0,Enabled=true,ResetOnSpawn=true,Name='ScreenGui', Parent=game.CoreGui})
 local Frame = CreateInstance('Frame',{Style=Enum.FrameStyle.Custom,Active=false,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0, 0, 0),BackgroundTransparency=0,BorderColor3=Color3.new(0.917647, 0.917647, 0.917647),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.486918598, 0, 0.568796039, 0),Rotation=0,Selectable=false,Size=UDim2.new(0, 664, 0, 226),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name = 'Frame',Parent = ScreenGui})
 local Credits = CreateInstance('TextLabel',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size14,Text='Credits: Made By Austinn#0014',TextColor3=Color3.new(1, 1, 1),TextScaled=true,TextSize=14,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,Active=false,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0, 0, 0),BackgroundTransparency=0,BorderColor3=Color3.new(0.105882, 0.164706, 0.207843),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.0489743724, 0, 1.12117434, 0),Rotation=0,Selectable=false,Size=UDim2.new(0, 253, 0, 50),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='Credits',Parent = Frame})
@@ -38,7 +34,8 @@ local Female = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.F
 local Male = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size14,Text='Male',TextColor3=Color3.new(0, 0, 0),TextScaled=true,TextSize=14,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(1, 1, 1),BackgroundTransparency=0,BorderColor3=Color3.new(0.105882, 0.164706, 0.207843),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.772844076, 0, 0.0803509951, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 131, 0, 36),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='Male',Parent = Frame})
 local Close = CreateInstance('TextButton',{Font=Enum.Font.SourceSans,FontSize=Enum.FontSize.Size14,Text='',TextColor3=Color3.new(0, 0, 0),TextScaled=true,TextSize=14,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(1, 0.0784314, 0.168627),BackgroundTransparency=0,BorderColor3=Color3.new(0.105882, 0.164706, 0.207843),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.969311476, 0, -0.00807230454, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 20, 0, 20),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='Close',Parent = Frame})
 local OPEN = CreateInstance('TextButton',{Font=Enum.Font.SciFi,FontSize=Enum.FontSize.Size14,Text='Open CodeRed GUI',TextColor3=Color3.new(1, 1, 1),TextScaled=true,TextSize=14,TextStrokeColor3=Color3.new(0, 0, 0),TextStrokeTransparency=1,TextTransparency=0,TextWrapped=true,TextXAlignment=Enum.TextXAlignment.Center,TextYAlignment=Enum.TextYAlignment.Center,AutoButtonColor=true,Modal=false,Selected=false,Style=Enum.ButtonStyle.Custom,Active=true,AnchorPoint=Vector2.new(0, 0),BackgroundColor3=Color3.new(0, 0, 0),BackgroundTransparency=0,BorderColor3=Color3.new(0.105882, 0.164706, 0.207843),BorderSizePixel=1,ClipsDescendants=false,Draggable=false,Position=UDim2.new(0.398255825, 0, 0, 0),Rotation=0,Selectable=true,Size=UDim2.new(0, 317, 0, 50),SizeConstraint=Enum.SizeConstraint.RelativeXY,Visible=true,ZIndex=1,Name='OPEN',Parent = ScreenGui})
-
+Frame.Draggable = true
+Frame.Active = true
 
 SwagMode.MouseButton1Click:Connect(function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/lerkermer/lua-projects/master/SwagModeV002"))()
@@ -157,7 +154,7 @@ Fly.MouseButton1Click:Connect(function()
 		end
 	end)
 	start()
-    
+    wait(0) local A_1 = "[CodeRed] Fly Activated." local A_2 = "All" local Event = game:GetService("ReplicatedStorage").DefaultChatSystemChatEvents.SayMessageRequest Event:FireServer(A_1, A_2)
     
 end)
 
@@ -221,6 +218,7 @@ end)
 
 AntiStomp.MouseButton1Click:Connect(function()
     	pcall(function() if tostring(game.PlaceId) == "2788229376" then local corepackages = game:GetService"CorePackages" local localplayer = game:GetService"Players".LocalPlayer local run = game:GetService"RunService" run:BindToRenderStep("rrrrrrrrrrr",2000,function() pcall(function() if localplayer.Character.Humanoid.Health <= 30 then localplayer.Character.Humanoid:UnequipTools() localplayer.Character.Humanoid:Destroy() workspace.CurrentCamera.CameraSubject = localplayer.Character wait() local prt = Instance.new("Model", corepackages); Instance.new("Part", prt).Name="Torso"; Instance.new("Part", prt).Name="Head"; Instance.new("Humanoid", prt).Name="Humanoid"; localplayer.Character=prt end end) pcall(function() if localplayer.Character.Humanoid.FloorMaterial == "Plastic" then ReplicatedStorage:FireServer("Stomp") end end) end) loadstring(game:HttpGet("https://pastebin.com/raw/MQ3wc7Zq", true))() end end)
+
 end)
 
 
@@ -240,6 +238,7 @@ Autostomp.MouseButton1Click:Connect(function()
 					elseif Toggle == true then 
 						print('On')
 						Toggle = false
+					
 					end
 				end
 			end)
@@ -313,6 +312,7 @@ Male.MouseButton1Click:Connect(function()
 	game.Players.LocalPlayer.Backpack["[Bat]"].GripUp     = Vector3.new(0, 0, 0)
 	game.Players.LocalPlayer.Backpack["[Bat]"].Parent = game.Players.LocalPlayer.Character
 	
+
 end)
 
 
@@ -328,6 +328,7 @@ Female.MouseButton1Click:Connect(function()
 	game.Players.LocalPlayer.Backpack["[Hamburger]"].GripUp     = Vector3.new(0, 0, 90)
 	game.Players.LocalPlayer.Backpack["[Hamburger]"].Parent = game.Players.LocalPlayer.Character
 	
+
 end)
 
 
@@ -367,6 +368,7 @@ WhirlPool.MouseButton1Click:Connect(function()
 		Spin.MaxTorque = Vector3.new(0, math.huge, 0)
 		Spin.AngularVelocity = Vector3.new(0,spinSpeed,0)
 		wait(0.6)
+	
 	end
 end)
 
@@ -398,36 +400,13 @@ end)
 IYAdmin.MouseButton1Click:Connect(function()
     loadstring(game:HttpGet("https://pastebin.com/raw/a8qD5kP8"))()
     
+
+
 end)
 
 
 Hoodshark.MouseButton1Click:Connect(function()
     loadstring(game:HttpGet("\104\116\116\112\115\58\47\47\114\97\119\46\103\105\116\104\117\98\117\115\101\114\99\111\110\116\101\110\116\46\99\111\109\47\114\97\99\101\109\111\100\101\120\47\109\121\45\115\99\114\105\112\116\115\47\109\97\115\116\101\114\47\104\111\111\100\37\50\48\115\104\97\114\107\37\50\48\99\114\97\99\107\101\100", true))()
     
-end)
 
-
-
-
--- // Alright let me explain this script.
- 
-local Players = game:GetService("Players") -- Gets the players
- 
--- // Configuration
- 
-local GroupId = 0 -- Sets a variable for which group you are in
-local WhitelistedRank = 100 -- The rank that can enter the game if they're in group
-local WhitelistedPlayers = { -- Sets a dictonary
-	[33122605] = true, -- If player has this user id then allows them to access
-}
-local KickMessage = "You are not on the whitelist." -- if you get kicked it will display this
- 
--- // Functions
- 
-Players.PlayerAdded:Connect(function(Player) -- When an player joins
-	if WhitelistedPlayers[Player.UserId] == true or Player:GetRankInGroup(GroupId) >= WhitelistedRank then -- If their id is on the dictonary or they're in the group above the min group rank
-		-- then allows them to play
-	else -- else
-		Player:Kick(Please Join Group :D) -- kicks them
-	end
 end)
