@@ -376,14 +376,14 @@ end)
 
 
 OPEN.MouseButton1Click:Connect(function()
-    	Close.Visible = true
-	Frame.Visible = false
+    	OPEN.Visible = true
+	Frame.Visible = true
 end)
 
 
 Close.MouseButton1Click:Connect(function()
     	Close.Visible = true
-	Frame.Visible = true
+	Frame.Visible = false
 end)
 
 
